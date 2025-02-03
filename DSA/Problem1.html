@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem - 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .code-block {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NSTcodes👨🏻‍💻</a>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2>Problem Explanation</h2>
+        <p>The problem requires calculating the sum of the elements in the R-th row of a matrix. The matrix is of size N
+            × M, and the input provides the row index R.</p>
+
+        <h3>Steps to Solve:</h3>
+        <ol>
+            <li>Read the number of rows (N) and columns (M) of the matrix.</li>
+            <li>Read each row of the matrix and store it in a list.</li>
+            <li>Read the row index R and calculate the sum of the elements in the R-th row.</li>
+            <li>Output the result as the sum of the elements in that row.</li>
+        </ol>
+
+        <h3>Python Code Implementation:</h3>
+        <div class="code-block">
+            <code>
+n, m = map(int, input().split())  # Reading N and M
+matrix = []
+
+# Reading the matrix
+for i in range(n):
+    row = list(map(int, input().split()))  # Reading each row
+    matrix.append(row)
+
+r = int(input())  # Reading the row index R
+
+# Calculating and printing the sum of the R-th row
+print(sum(matrix[r]))
+            </code>
+        </div>
+
+        <h3>Explanation of the Code:</h3>
+        <ul>
+            <li><b>Input Parsing:</b> The first line contains the number of rows (N) and columns (M).</li>
+            <li><b>Matrix Construction:</b> Each row is stored as a list of integers in the <code>matrix</code> list.
+            </li>
+            <li><b>Sum Calculation:</b> The sum of the R-th row is calculated using Python's built-in <code>sum()</code>
+                function.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
