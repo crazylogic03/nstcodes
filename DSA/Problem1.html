@@ -30,44 +30,38 @@
     </nav>
 
     <div class="container my-5">
-        <h2>Problem Explanation</h2>
-        <p>The problem requires calculating the sum of the elements in the R-th row of a matrix. The matrix is of size N
-            × M, and the input provides the row index R.</p>
+        <h2>Problem </h2>
+        <p>Given an integer K, find a positive integer x such that K = 2x2 + 5x. If no such positive integer x exists,
+            print -1.</p>
 
-        <h3>Steps to Solve:</h3>
-        <ol>
-            <li>Read the number of rows (N) and columns (M) of the matrix.</li>
-            <li>Read each row of the matrix and store it in a list.</li>
-            <li>Read the row index R and calculate the sum of the elements in the R-th row.</li>
-            <li>Output the result as the sum of the elements in that row.</li>
-        </ol>
+        <h6>Input :</h6>
+        <p>The first and only line of the input represents an integer K.</p>
+        <p>0 <= K <=10**18</p>
+                <h6>Output :</h6>
+                <p>Print the value of X which Satisfies </p>
+                <ol>
+                    <li>Read the number of rows (N) and columns (M) of the matrix.</li>
+                    <li>Read each row of the matrix and store it in a list.</li>
+                    <li>Read the row index R and calculate the sum of the elements in the R-th row.</li>
+                    <li>Output the result as the sum of the elements in that row.</li>
+                </ol>
 
-        <h3>Python Code Implementation:</h3>
-        <div class="code-block">
-            <code>
-n, m = map(int, input().split())  # Reading N and M
-matrix = []
+                <h3>Python Code Implementation:</h3>
+                <div class="code-block">
 
-# Reading the matrix
-for i in range(n):
-    row = list(map(int, input().split()))  # Reading each row
-    matrix.append(row)
+                </div>
 
-r = int(input())  # Reading the row index R
-
-# Calculating and printing the sum of the R-th row
-print(sum(matrix[r]))
-            </code>
-        </div>
-
-        <h3>Explanation of the Code:</h3>
-        <ul>
-            <li><b>Input Parsing:</b> The first line contains the number of rows (N) and columns (M).</li>
-            <li><b>Matrix Construction:</b> Each row is stored as a list of integers in the <code>matrix</code> list.
-            </li>
-            <li><b>Sum Calculation:</b> The sum of the R-th row is calculated using Python's built-in <code>sum()</code>
-                function.</li>
-        </ul>
+                <h3>Explanation of the Code:</h3>
+                <ul>
+                    <li><b>Input Parsing:</b> The first line contains the number of rows (N) and columns (M).</li>
+                    <li><b>Matrix Construction:</b> Each row is stored as a list of integers in the <code>matrix</code>
+                        list.
+                    </li>
+                    <li><b>Sum Calculation:</b> The sum of the R-th row is calculated using Python's built-in
+                        <code>sum()</code>
+                        function.
+                    </li>
+                </ul>
     </div>
 </body>
 
