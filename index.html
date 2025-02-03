@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Q&A Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar will be dynamically loaded here -->
+    <div id="navbar-container"></div>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Select a Subject</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100" onclick="window.location.href='subject1.html'">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Subject 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Subject 1</h5>
+                        <p class="card-text">Learn more about Subject 1. Click to explore topics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="window.location.href='subject2.html'">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Subject 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Subject 2</h5>
+                        <p class="card-text">Learn more about Subject 2. Click to explore topics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="window.location.href='subject3.html'">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Subject 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Subject 3</h5>
+                        <p class="card-text">Learn more about Subject 3. Click to explore topics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="window.location.href='subject4.html'">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Subject 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Subject 4</h5>
+                        <p class="card-text">Learn more about Subject 4. Click to explore topics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" onclick="window.location.href='subject5.html'">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Subject 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Subject 5</h5>
+                        <p class="card-text">Learn more about Subject 5. Click to explore topics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to load the navbar HTML into the page
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
